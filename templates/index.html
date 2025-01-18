@@ -35,8 +35,12 @@
     <h5 class="nameii">output file </h5>
     </div>
  
-    <div class="inimgdiv"><img src="../static/images/Capture.JPG" alt="input image" class="inimg">
-    <img src="../static/images/output.JPG" alt="output image" class="inimg1"></div>
+    <div class="inimgdiv">
+        <!-- <img src="../static/images/Capture.JPG" alt="input image" class="inimg"> -->
+        <img src="{{ url_for('static', filename='images/Capture.JPG') }}" alt="input image" class="inimg">
+    <!-- <img src="../static/images/output.JPG" alt="output image" class="inimg1"> -->
+    <img src="{{ url_for('static', filename='images/output.JPG') }}" alt="output image" class="inimg1"></div>
+</div>
     
 </body>
 </html>
